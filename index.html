@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js\test.js"></script>
+	<title>&#9829;Jigoku Saru&#9829;</title>
+
+</head>
+<body>
+	<div class="header">
+		<h1>&#9829;Jigoku Saru&#9829;</h1>
+	</div>
+	<div class="topnav">
+		<button class="tablinks" onclick="openTab(event,'About')" id="defaultTab">About</button>
+		<button class="tablinks" onclick="openTab(event,'Stats')" >Stats</button>
+		<button class="tablinks" onclick="openTab(event,'Website')">Website</button>
+	</div>
+	<div class="row">
+		<div class="column middle">
+			<div id="About" class="tabcontent">
+				<h3>About</h3>
+				<p>Hey there, I'm Jigo. </p>
+			</div>
+			<div id="Stats" class="tabcontent">
+				<h3>Stats</h3>
+				<p>
+					Name: Jigoku Saru<br>
+					Age: 120 Eevee yrs (21 Human)<br>
+					Gender: Female<br>
+					Bust: (unsure at the moment)<br>
+					Species: Eevee (Pokèmon)<br>
+					Fur: Dark grey with orange and yellow accsents
+
+
+
+				</p>
+			</div>
+			<div id="Website" class="tabcontent">
+				<h3>Website Rules</h3>
+				<p></p>
+			</div>
+		</div>
+		<div class="column side">
+			<img src="imgs\full.jpg" width=100%>
+			<audio src="music\full.mp3" controls></audio>
+				<div>
+					<label for="bday">Enter Your Birth Day:</label>tml
+					<input id = "bday" type="date" required>
+					<span class="validity"></span>
+				</div>
+				<div>
+					<button onclick="checkBday()">SUBMIT</button>
+				</div>
+		</div>
+	</div>
+	<script type="text/javascript">document.getElementById("defaultTab").click();</script>
+</body>
+</html>

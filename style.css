@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #000;
+  color: #F00;
+}
+h1{
+	font-family: "Segoe Script";
+}
+h3{
+	text-align: center;
+	font-size: 250%;
+
+}
+p{
+	font-size: 175%;
+}
+input:invalid+span:after {
+    content: "\2716";
+    padding-left: 5px;
+}
+
+input:valid+span:after {
+    content: "\2713";
+    padding-left: 5px;
+}
+
+.header{
+	padding: 20px;
+	text-align: center;
+	background-color: #000;
+	color: #F00;
+	font-size: 150%;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+    border: 1px solid red;
+}
+
+/* Style the topnav links */
+.topnav button {
+    float: left;
+    display: block;
+    color: #F00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #000;
+    border: none;
+}
+
+/* Change color on hover */
+.topnav button:hover {
+    background-color: #202020;
+    color: #F00;
+}
+
+/* Create an active/current tablink class */
+.topnav button.active {
+    background-color: #202020;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    float: right;
+}
+
+/* Middle column */
+.column.middle {
+    width: 75%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
