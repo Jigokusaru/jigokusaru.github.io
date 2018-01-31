@@ -19,15 +19,15 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 function checkBday() {
-    today = new Date()
-    var bday=new Date(document.getElementById("bday").value); //Month is 0-11 in JavaScript
-      //Set 1 day in milliseconds
-    var one_yr=1000*60*60*24 * 30 * 12
-    age = Math.floor((bday.getTime() - today.getTime() ) / one_yr);
-    if (age <= 21) {
-        y = true
-    }else{
-        y = false
-    }
-    alert(y);
+  today = new Date()
+  var bday=new Date(document.getElementById("bday").value);
+  if(bday != "Invalid Date"){
+      var one_yr=1000*60*60*24 * 365.2425
+      age = Math.floor((today.getTime() - bday.getTime() ) / one_yr);
+      var isAdult = (age >= 21)? true:false;
+      document.getElementById("ageVar").innerHTML = (isAdult)? "<p>You are old enough to be on this page!</p>":"<p>Screw off Kid noone wants you!</p>"        
+  }else{
+    alert("PLEASE SELECT YOUR BIRTHDAY!");
+   }
+
 }
