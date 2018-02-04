@@ -38,6 +38,10 @@ input:valid+span:after {
     width: 24%;
     
 }
+
+#ageVared{
+    text-align: center;    
+}
 .restrict{
     filter: blur(15px);
 }

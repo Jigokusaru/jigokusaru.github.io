@@ -26,7 +26,7 @@ function openTab(evt, tabName) {
       var one_yr=1000*60*60*24 * 365.2425
       age = Math.floor((today.getTime() - bday.getTime() ) / one_yr);
       isAdult = (age >= 18)? true:false;
-      document.getElementById("ageVar").innerHTML = (isAdult)? "<p>You are old enough to be on this page!</p>":"<p>Screw off Kid noone wants you!</p>"        
+      document.getElementById("ageVar").innerHTML = (isAdult)? "<p id=ageVared>You are old enough to be on this page!</p>":"<p id=ageVared>Screw off Kid noone wants you!</p>"        
     }else{
       alert("PLEASE SELECT YOUR BIRTHDAY!");
     }
